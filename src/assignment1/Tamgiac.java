@@ -8,6 +8,7 @@ public class Tamgiac {
     double p;
     double s;
 
+
     void run(){
         System.out.printf("Cạnh thứ 1: " + a + "\n" + "Cạnh thứ 2: " + b + "\n" + "Cạnh thứ 3: " + c + "\n");
     }
