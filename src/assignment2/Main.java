@@ -20,10 +20,10 @@ public class Main {
         System.out.println("Nhập phân số thứ 2: ");
         fr2.nhapPS(sc);
 
-        tong = fr1.congPS(fr2);
-        hieu = fr1.truPS(fr2);
-        tich = fr1.nhanPS(fr2);
-        thuong = fr1.chiaPS(fr2);
+        tong = fr1.add(fr2);
+        hieu = fr1.sub(fr2);
+        tich = fr1.mul(fr2);
+        thuong = fr1.div(fr2);
 
         System.out.println("Phân số thứ 1 là: ");
         fr1.hienThi();
@@ -46,8 +46,5 @@ public class Main {
         tich.hienThi();
         System.out.println("Thương 2 phân số là: ");
         thuong.hienThi();
-
-
-
     }
 }

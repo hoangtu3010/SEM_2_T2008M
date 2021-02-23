@@ -43,25 +43,25 @@ public class Fraction {
         }
     }
 
-    public Fraction congPS(Fraction fr2){
+    public Fraction add(Fraction fr2){
         int t = tu*fr2.mau + fr2.tu*mau;
         int m = mau* fr2.mau;
         return new Fraction(t,m);
     }
 
-    public Fraction truPS(Fraction fr2){
+    public Fraction sub(Fraction fr2){
         int t = tu*fr2.mau - fr2.tu*mau;
         int m = mau* fr2.mau;
         return new Fraction(t,m);
     }
 
-    public Fraction nhanPS(Fraction fr2){
+    public Fraction mul(Fraction fr2){
         int t = tu*fr2.tu;
         int m = mau* fr2.mau;
         return new Fraction(t,m);
     }
 
-    public Fraction chiaPS(Fraction fr2){
+    public Fraction div(Fraction fr2){
         int t = tu*fr2.mau;
         int m = mau* fr2.tu;
         return new Fraction(t,m);
