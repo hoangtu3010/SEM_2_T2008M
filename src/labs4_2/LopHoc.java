@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class LopHoc {
     int maLop;
-    char tenLop;
-    char phongHoc;
+    String tenLop;
+    String phongHoc;
     ArrayList<SinhVien> danhSachSV;
 
     public LopHoc() {
@@ -20,19 +20,19 @@ public class LopHoc {
         this.maLop = maLop;
     }
 
-    public char getTenLop() {
+    public String getTenLop() {
         return tenLop;
     }
 
-    public void setTenLop(char tenLop) {
+    public void setTenLop(String tenLop) {
         this.tenLop = tenLop;
     }
 
-    public char getPhongHoc() {
+    public String getPhongHoc() {
         return phongHoc;
     }
 
-    public void setPhongHoc(char phongHoc) {
+    public void setPhongHoc(String phongHoc) {
         this.phongHoc = phongHoc;
     }
 
@@ -48,13 +48,15 @@ public class LopHoc {
         getDanhSachSV().remove(sv);
     }
 
+    SinhVien s = new SinhVien();
+
     public void printDanhSach(){
         System.out.println("Mã lớp: " + getMaLop());
         System.out.println("Tên lớp: " + getTenLop());
         System.out.println("Phòng học: " + getPhongHoc());
         System.out.println("Danh sách SV: ");
-        for (SinhVien s:danhSachSV){
-            System.out.println(s);
+        for (SinhVien s:getDanhSachSV()){
+            System.out.println(s.getMaSo() + " - " + s.getHoTen() + " - " + s.getSdt() + " - " + s.getDiaChi());
         }
     }
 }

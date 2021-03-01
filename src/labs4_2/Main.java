@@ -30,10 +30,10 @@ public class Main {
         lh.addSV(sv4);
         lh.removeSV(sv4);
 
-        System.out.println("Danh sách sinh viên trong lớp: ");
-        for (SinhVien sv:lh.getDanhSachSV()){
-            System.out.println(sv.getMaSo() + " - " + sv.getHoTen() + " - " + sv.getSdt() + " - " + sv.getDiaChi());
-        }
+        lh.setMaLop(1);
+        lh.setTenLop("T2008M");
+        lh.setPhongHoc("A8");
 
+        lh.printDanhSach();
     }
 }
